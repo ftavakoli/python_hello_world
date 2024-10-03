@@ -3,12 +3,19 @@ class Solution:
         """
         Do not return anything, modify s in-place instead.
         """
-        # start_pointer = s[0]
-        # end_pointer = s[-1]
+        s_len = len(s)-1
+        i = 0
+        while i < s_len-i: 
+            s[i], s[s_len-i] = s[s_len-i], s[i]
+            i += 1
+        return s   
 
-        s.reverse()
 
-        return s
+
+        # using the reverse() built in method 
+        # s.reverse()
+
+        # return s
 
 
 
