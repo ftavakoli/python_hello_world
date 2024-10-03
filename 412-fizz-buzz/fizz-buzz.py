@@ -13,7 +13,8 @@ class Solution:
             elif i%5 ==0:
                 answer.append("Buzz")
             else :
-                answer.append(str(i))
+                
+                answer.append(str(i)) # i is integer
         
         return answer
         
